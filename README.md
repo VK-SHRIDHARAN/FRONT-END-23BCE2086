@@ -32,7 +32,7 @@ The Weather Dashboard is a web application that provides users with real-time we
 4. **PDF Generation:** `jsPDF` is utilized to export weather journal entries as a structured PDF.
 
 ## Live Demo
-**Try it now:** https://front-end-23-bce-2086-kzfk4l9sm-shridharan-vk-s-projects.vercel.app/
+**Try it now:** https://front-end-23-bce-2086.vercel.app/
 
 ## Getting Started
 ### Installation
@@ -78,7 +78,7 @@ This generates a `build` folder with minified assets ready for deployment.
 ### Deployment Options
 
 #### Option 1: Deploy to Vercel (Already Live!)
-**Your app is already live at:** https://front-end-23-bce-2086-kzfk4l9sm-shridharan-vk-s-projects.vercel.app/
+**Your app is already live at:** https://front-end-23-bce-2086.vercel.app/
 
 To manage environment variables in Vercel:
 1. Go to your Vercel project dashboard
