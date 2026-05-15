@@ -38,11 +38,11 @@ The Weather Dashboard is a web application that provides users with real-time we
 ### Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/VK-SHRIDHARAN/FRONT-END-23BCE2086.git
+   git clone https://github.com/VK-SHRIDHARAN/WEATHER_FORECAST.git
    ```
 2. Navigate to the project directory:
    ```sh
-   cd FRONT-END-23BCE2086
+   cd WEATHER_FORECAST
    ```
 3. Install dependencies:
    ```sh
