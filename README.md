@@ -31,15 +31,18 @@ The Weather Dashboard is a web application that provides users with real-time we
 3. **UI Interactions:** Framer Motion handles smooth animations for inputs, buttons, and weather elements.
 4. **PDF Generation:** `jsPDF` is utilized to export weather journal entries as a structured PDF.
 
+## Live Demo
+**Try it now:** https://front-end-23-bce-2086-kzfk4l9sm-shridharan-vk-s-projects.vercel.app/
+
 ## Getting Started
 ### Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo/weather-dashboard.git
+   git clone https://github.com/VK-SHRIDHARAN/FRONT-END-23BCE2086.git
    ```
 2. Navigate to the project directory:
    ```sh
-   cd weather-dashboard
+   cd FRONT-END-23BCE2086
    ```
 3. Install dependencies:
    ```sh
@@ -51,10 +54,17 @@ The Weather Dashboard is a web application that provides users with real-time we
    ```
 
 ### Environment Setup
-Create a `.env` file and add your API keys:
+Create a `.env` file in the project root and add your API keys:
 ```sh
-REACT_APP_WEATHER_API_KEY=your_api_key
+REACT_APP_WEATHER_API_KEY=your_openweather_api_key
+REACT_APP_FORECAST_API_KEY=your_forecast_api_key
 ```
+
+Get your free API key from **OpenWeatherMap:**
+- Visit: https://openweathermap.org/api
+- Sign up for a free account
+- Generate an API key from your account dashboard
+- Use the **One Call API 3.0** (covers both current weather and 5-day forecast)
 
 ## Build & Deployment
 
@@ -67,16 +77,24 @@ This generates a `build` folder with minified assets ready for deployment.
 
 ### Deployment Options
 
-#### Option 1: Deploy to Vercel (Recommended)
-1. Install Vercel CLI:
-   ```sh
-   npm install -g vercel
-   ```
-2. Deploy:
-   ```sh
-   vercel
-   ```
-3. Follow the prompts and configure environment variables in Vercel dashboard.
+#### Option 1: Deploy to Vercel (Already Live!)
+**Your app is already live at:** https://front-end-23-bce-2086-kzfk4l9sm-shridharan-vk-s-projects.vercel.app/
+
+To manage environment variables in Vercel:
+1. Go to your Vercel project dashboard
+2. Navigate to Settings → Environment Variables
+3. Add:
+   - `REACT_APP_WEATHER_API_KEY` (Production)
+   - `REACT_APP_FORECAST_API_KEY` (Production)
+4. Redeploy to apply changes
+
+Or use Vercel CLI:
+```sh
+npm install -g vercel
+vercel env add REACT_APP_WEATHER_API_KEY production
+vercel env add REACT_APP_FORECAST_API_KEY production
+vercel --prod
+```
 
 #### Option 2: Deploy to Netlify
 1. Build the project:
